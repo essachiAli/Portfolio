@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor "Visiteur" as Visiteur
+
+rectangle "Portfolio Website" {
+  usecase "Consulter la page d'accueil" as UC1
+  usecase "Voir les projets" as UC2
+  usecase "Voir les détails d'un projet" as UC3
+  usecase "Contacter le propriétaire" as UC4
+}
+
+Visiteur -- UC1
+Visiteur -- UC2
+Visiteur -- UC3
+Visiteur -- UC4
+@enduml
