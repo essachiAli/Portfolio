@@ -1,0 +1,26 @@
+graph TD
+
+    A[Home Page] --> B[About Section]
+    A --> C[Skills Section]
+    A --> D[Call to Action: View My Projects]
+
+    D --> E[Projects Page]
+    E --> F[Project Details / GitHub Links]
+
+    A --> G[Contact Page]
+    E --> G
+    F --> G
+
+    G --> H[Contact Form Submitted]
+    H --> I[Thank You / Success Message]
+
+    %% Navigation bar links
+    subgraph Navbar
+        N1(Home)
+        N2(Projects)
+        N3(Contact)
+    end
+
+    N1 --> A
+    N2 --> E
+    N3 --> G
