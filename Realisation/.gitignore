@@ -1,0 +1,104 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# Java / Gradle / Maven
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+.gradle/
+out/
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Go
+vendor/
+Godeps/
+*.exe
+*.test
+
+# Ruby
+*.gem
+.bundle/
+vendor/bundle
+.log
+tmp/
+
+# PHP / Composer
+vendor/
+composer.lock
+
+# Build / Packaging
+dist/
+release/
+*.zip
+*.tar.gz
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+tmp/
+temp/
+.cache/
+.cache-loader/
+
+# Test / Coverage
+coverage/
+coverage.xml
+.nyc_output/
+*.lcov
+
+# Docker
+docker-compose.override.yml
+.env.docker
+
+# Secrets / Credentials
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Misc
+*.iml
+.vagrant/
+.idea/
+*.DS_Store
