@@ -1,0 +1,46 @@
+classDiagram
+    %% Services
+    class SkillService {
+        +getAllSkills()
+        +getSkillById(id)
+        +addSkill(skill)
+        +removeSkill(id)
+    }
+
+    class ProjectService {
+        +getAllProjects()
+        +getProjectById(id)
+        +createProject(project)
+        +deleteProject(id)
+    }
+
+    class DeveloperService {
+        +getAllDevelopers()
+        +assignSkillToDeveloper(skillId, developerId)
+        +assignProjectToDeveloper(projectId, developerId)
+        -skillService: SkillService
+        -projectService: ProjectService
+    }
+
+    %% Controllers
+    class AboutController {
+        +showAboutPage()
+    }
+
+    class HomeController {
+        +showHomePage()
+    }
+
+    class ProjectController {
+        +listProjects()
+        +showProject(id)
+        +createProject()
+        +deleteProject(id)
+    }
+
+    %% Relationships: Controllers use Services
+    AboutController --> DeveloperService : uses
+    HomeController --> SkillService : uses
+    HomeController --> DeveloperService : uses
+    ProjectController --> ProjectService : uses
+    ProjectController --> DeveloperService : uses

@@ -111,6 +111,12 @@ style: |
 
 ---
 
+# **Diagramme de class**
+
+![Class Diagram](images/ClassDiagram.png)
+
+---
+
 # **Conception : Navigation Flow**
 
 ![Diagramme UML](images/diagrams/Screenshot.png)
