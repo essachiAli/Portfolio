@@ -42,6 +42,7 @@ style: |
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     display: block;
     margin: 20px auto;
+    max-height: 500px;
   }
 
   p {
