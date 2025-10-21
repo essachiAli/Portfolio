@@ -113,7 +113,7 @@ style: |
 
 # **Diagramme de class**
 
-![Class Diagram](images/ClassDiagram.png)
+![Class Diagram](images/diagrams/developer_portfolio.png)
 
 ---
 

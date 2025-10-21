@@ -1,1 +1,1 @@
-marp Presentation.md -o Presentation.html
+marp Presentation.md -o index.html

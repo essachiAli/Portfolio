@@ -1,25 +1,32 @@
 classDiagram
-    class SkillService {
-        +getAllSkills()
-        +getSkillById(id)
-        +addSkill(skill)
-        +removeSkill(id)
+    class Developer {
+        +string name
+        +string title
+        +string tagline
+        +string bio
+        +string email
+        +string phone
+        +string profileImage
+        +getProfile(): array
+        +getSkills(): Skill[]
+        +getProjects(): Project[]
     }
 
-    class ProjectService {
-        +getAllProjects()
-        +getProjectById(id)
-        +createProject(project)
-        +deleteProject(id)
+    class Skill {
+        +string name
+        +string level
+        +string category
+        +string icon
     }
 
-    class DeveloperService {
-        +getAllDevelopers()
-        +assignSkillToDeveloper(skillId, developerId)
-        +assignProjectToDeveloper(projectId, developerId)
-        -skillService: SkillService
-        -projectService: ProjectService
+    class Project {
+        +string title
+        +string description
+        +string link
+        +string image
+        +string technologies
+        +getProjectDetails(): array
     }
 
-    DeveloperService --> SkillService : uses
-    DeveloperService --> ProjectService : uses
+    Developer "1" --> "*" Skill : has
+    Developer "1" --> "*" Project : creates
