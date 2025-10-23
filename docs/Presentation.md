@@ -134,3 +134,7 @@ style: |
 ---
 
 ![About Page](images/about.png)
+
+--- 
+
+# **Thanks**

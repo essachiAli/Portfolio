@@ -137,29 +137,29 @@
     </div>
 </section>
 
-<!-- Skills Section -->
+<!-- Technologies Section -->
 <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">
-            Technical Skills
+            Technologies
         </h2>
 
         <div class="space-y-8">
-            @foreach($skills as $category => $categorySkills)
+            @foreach($technologies as $category => $categoryTechs)
             <div>
                 <h3 class="text-xl font-bold text-gray-900 mb-4">
                     {{ $category }}
                 </h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    @foreach($categorySkills as $skill)
+                    @foreach($categoryTechs as $tech)
                     <div>
                         <div class="flex justify-between mb-2">
-                            <span class="text-gray-700 font-medium">{{ $skill['name'] }}</span>
-                            <span class="text-gray-500">{{ $skill['level'] }}%</span>
+                            <span class="text-gray-700 font-medium">{{ $tech['name'] }}</span>
+                            <span class="text-gray-500">{{ $tech['level'] }}%</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full h-3">
                             <div class="bg-indigo-600 h-3 rounded-full transition-all duration-500"
-                                 style="width: {{ $skill['level'] }}%">
+                                 style="width: {{ $tech['level'] }}%">
                             </div>
                         </div>
                     </div>
@@ -170,6 +170,8 @@
         </div>
     </div>
 </section>
+
+
 
 <!-- Languages Section -->
 <section class="py-16 bg-gray-50">

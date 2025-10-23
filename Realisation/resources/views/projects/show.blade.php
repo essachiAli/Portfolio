@@ -6,14 +6,14 @@
 <!-- Project Header -->
 <section class="bg-gradient-to-br from-indigo-600 to-purple-700 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <a href="{{ route('projects.index') }}" 
+        <a href="{{ route('projects.index') }}"
            class="inline-flex items-center text-indigo-100 hover:text-white mb-6">
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
             </svg>
             Back to Projects
         </a>
-        
+
         <div class="flex items-center space-x-4 mb-4">
             <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-semibold">
                 {{ $project['category'] }}
@@ -22,11 +22,11 @@
                 {{ date('F Y', strtotime($project['date'])) }}
             </span>
         </div>
-        
+
         <h1 class="text-4xl md:text-5xl font-bold mb-4">
             {{ $project['title'] }}
         </h1>
-        
+
         <p class="text-xl text-indigo-100 max-w-3xl">
             {{ $project['description'] }}
         </p>
@@ -40,10 +40,10 @@
             <!-- Main Content -->
             <div class="lg:col-span-2">
                 <!-- Project Image -->
-                <img src="{{ $project['image'] }}" 
-                     alt="{{ $project['title'] }}" 
+                <img src="{{ $project['image'] }}"
+                     alt="{{ $project['title'] }}"
                      class="w-full h-96 object-cover rounded-lg shadow-lg mb-8">
-                
+
                 <!-- Description -->
                 <div class="mb-8">
                     <h2 class="text-2xl font-bold text-gray-900 mb-4">
@@ -53,7 +53,7 @@
                         {{ $project['long_description'] }}
                     </p>
                 </div>
-                
+
                 <!-- Features -->
                 <div class="mb-8">
                     <h2 class="text-2xl font-bold text-gray-900 mb-4">
@@ -71,7 +71,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <!-- Sidebar -->
             <div class="lg:col-span-1">
                 <!-- Technologies -->
@@ -87,15 +87,15 @@
                         @endforeach
                     </div>
                 </div>
-                
+
                 <!-- Links -->
-                <div class="bg-gray-50 rounded-lg p-6 mb-6">
+                {{-- <div class="bg-gray-50 rounded-lg p-6 mb-6">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">
                         Project Links
                     </h3>
                     <div class="space-y-3">
                         @if($project['github'])
-                        <a href="{{ $project['github'] }}" 
+                        <a href="{{ $project['github'] }}"
                            target="_blank"
                            class="flex items-center justify-between bg-white px-4 py-3 rounded-lg hover:shadow-md transition">
                             <span class="flex items-center text-gray-700">
@@ -109,9 +109,9 @@
                             </svg>
                         </a>
                         @endif
-                        
+
                         @if($project['demo'])
-                        <a href="{{ $project['demo'] }}" 
+                        <a href="{{ $project['demo'] }}"
                            target="_blank"
                            class="flex items-center justify-between bg-white px-4 py-3 rounded-lg hover:shadow-md transition">
                             <span class="flex items-center text-gray-700">
@@ -126,15 +126,15 @@
                             </svg>
                         </a>
                         @endif
-                        
+
                         @if(!$project['github'] && !$project['demo'])
                         <p class="text-gray-500 text-sm italic">
                             Project links not available
                         </p>
                         @endif
                     </div>
-                </div>
-                
+                </div> --}}
+
                 <!-- Project Info -->
                 <div class="bg-gray-50 rounded-lg p-6">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">
@@ -160,7 +160,7 @@
 <section class="py-12 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-            <a href="{{ route('projects.index') }}" 
+            <a href="{{ route('projects.index') }}"
                class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
                 View All Projects
             </a>
